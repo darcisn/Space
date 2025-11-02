@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .launch.card{
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.7 ease;
+        }
+        .visible{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+</head>
+<body  class="bg-white dark:bg-gray-950 text-gray-900 dark:text-white-900 transition-colors duration-500">
+   <!-- --Esta s la cabezera -- -->
+
+<head
+    class="text-center py-8 sticky top-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md">
+        <h1 class="text-3xl font-blod">🚀Lanzamientos de SpaceX</h1>
+</head>
+
+   <!-- --Contenedor principal -- -->
+
+<main
+   id="Lanzamientos"
+   class="max-w-6xl max-auto p-6 grid sm:grid-cols-2 grap-6">
+</main>
+
+   <!-- --Botones de paginacion -- -->
+    
+<div
+    class="flex justify-center gap-4 py-8">
+    
+    <button
+        id="Anterior"
+        class="px-4 py-2 bg-blue-600 hover:bg-blue-800 text-white roubded disabled:opacity-40"
+    > Anterior</button>
+
+    <button
+        id="Siguiente"
+        class="px-4 py-2 bg-blue-600 hover:bg-blue-800 text-white roubded disabled:opacity-40"
+    > Siguiente</button>
+
+
+</div>
+<footer
+    class="text-center py-4 text-ms opacity-70">
+
+    <a 
+        class="underline hover:text-blue-500"
+        href="http://">SpaceX👽</a>
+
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
